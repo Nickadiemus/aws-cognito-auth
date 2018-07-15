@@ -5,9 +5,10 @@ import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
 
 /** component import(s)                                                 */
+import { Navbar, NavItem, Icon } from 'react-materialize';
 
 /** style import(s)                                                     */
-
+import '../styles/Navigation.css';
 
 /*/
  *  Component: Navigation
@@ -18,13 +19,11 @@ import { Link } from 'react-router-dom';
 class Navigation extends Component {
   render(){
     return(
-      <div style = {{
-        height: '150px',
-        'background-color': 'grey',
-        'text-align': 'center'
-      }}>
-        <Link to = "/"></Link>
-      </div>
+      <Navbar className = "navbar-color" brand='logo' right>
+        <NavItem><Link to = "/Login">Login</Link></NavItem>
+        <NavItem href='get-started.html'><Icon>view_module</Icon></NavItem>
+        <NavItem href='get-started.html'><Icon>more_vert</Icon></NavItem>
+      </Navbar>
     )
   }
 }

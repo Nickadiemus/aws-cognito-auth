@@ -1,0 +1,8 @@
+.signup-wrapper{
+  margin: 10vh 25vw 10vh 25vw;
+  padding: 1em;
+  box-shadow: 1px 1px 15px black;
+  background-color: #ffffff95;
+  border-radius: .5em;
+  color: #444;
+}
